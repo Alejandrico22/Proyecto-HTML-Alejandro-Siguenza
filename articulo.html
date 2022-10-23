@@ -4,50 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./nav.css">
+    <link rel="stylesheet" href="./articulo.css">
+
     <title>Artículo</title>
 </head>
 <body>
-    <header>
-        <h1>Cómo viajar alrededor del mundo sin apenas dinero</h1>
-    </header>
-    <br>
-    <nav>
-        <ul type="square">
-            <li><a href="./index.html">Índice</a></li>
-            <li><a href="./form.html">Formulario</a></li>
-            <li><a href="./table.html">Tabla</a></li>
-            <li><a href="./blog.html">Blog de Viajes</a></li>
     
-        </ul>
-    </nav>
-    <br>
-    <main>
-        <article>
-            <section>Lorem ipsum dolor sit amet <del>consectetur</del> <ins>adipisicing</ins> elit. Molestias quaerat illo corporis rem ratione.
-                Delectus, ratione consectetur esse necessitatibus, magni possimus <strong><abbr title="Hypertext Markup Language">HTML</abbr></strong> voluptates nihil sit ducimus quis nesciunt
-                corrupti, modi quas!</section>
-            <br>
-            <section>Eveniet consequatur <b>voluptatem consectetur</b> minus autem animi culpa et recusandae delectus, unde aperiam cum
-                perspiciatis quibusdam labore fugiat rem <dfn title="accusamus dignissimos harum cum quo sapiente"><strong>laudantium</strong></dfn> necessitatibus placeat voluptatibus nesciunt excepturi quia
-                reprehenderit. Excepturi, esse ad!</section>
-            <br>
-            <section>Hic dicta odio quis, et eos <em>ipsum! Voluptas error</em> veniam, pariatur reiciendis officia dolor natus optio
-            molestias accusamus dignissimos harum cum quo sapiente, cupiditate rem animi laboriosam distinctio vel quasi!</section>
-        </article>
-    </main>
-    <br>
+    <div class="contenedor">
+        <header>
+            <h1>Cómo viajar alrededor del mundo sin apenas dinero</h1>
+        </header>
+        <br>
+        <nav>
+            <ul type="square" id="nav-list">
+                <li><a href="./index.html">índice</a></li>
+                <li><a href="./form.html">Formulario</a></li>
+                <li><a href="./table.html">Tabla</a></li>
+                <li><a href="./blog.html">Blog de Viajes</a></li>
+                <li class="nav-right"><a href="">About Us</a></li>
+            </ul>
+        </nav>
+        <br>
+        <div class="flex-container">
+            <main class="flex-container__main">
+                <article>
+                    <section class="section1">Lorem ipsum dolor sit amet <del>consectetur</del> <ins>adipisicing</ins> elit. Molestias quaerat illo corporis rem ratione.
+                        Delectus, ratione consectetur esse necessitatibus, magni possimus <strong><abbr title="Hypertext Markup Language">HTML</abbr></strong> voluptates nihil sit ducimus quis nesciunt
+                        corrupti, modi quas!</section>
+                    <br>
+                    <section class="section2">Eveniet consequatur <b>voluptatem consectetur</b> minus autem animi culpa et recusandae delectus, unde aperiam cum
+                        perspiciatis quibusdam labore fugiat rem <dfn title="accusamus dignissimos harum cum quo sapiente"><strong>laudantium</strong></dfn> necessitatibus placeat voluptatibus nesciunt excepturi quia
+                        reprehenderit. Excepturi, esse ad!</section>
+                    <br>
+                    <section class="section3">Hic dicta odio quis, et eos <em>ipsum! Voluptas error</em> veniam, pariatur reiciendis officia dolor natus optio
+                    molestias accusamus dignissimos harum cum quo sapiente, cupiditate rem animi laboriosam distinctio vel quasi!</section>
     
-    <aside>
-        <h4><a href="./blog.html">Mi blog de viajes</a></h4>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique, unde earum perspiciatis minus, consequatur ipsam corrupti fuga asperiores expedita exercitationem possimus ducimus voluptatibus enim aut.</p>
-
-    </aside>
-    <br>
-
-    <footer>
-        Envíame un correo pulsando<a href="mailto:alejandrokukinico@gmail.com">aquí</a> <br>
-        Mandame un WhatsApp desde <a href="tel:890664579">aquí</a>
+                </article>
+            </main>
+            <br>
+            
+            <aside class="flex-container__aside">
+                <h4><a href="./blog.html">Mi blog de viajes</a></h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique, unde earum perspiciatis minus, consequatur ipsam corrupti fuga asperiores expedita exercitationem possimus ducimus voluptatibus enim aut.</p>
         
-    </footer>
+            </aside>
+        </div>
+        
+        <br>
+    
+        <footer class="footer">
+
+            <h3>Envíame un correo <a href="mailto:alejandrokukinico@gmail.com">
+                <img src="./images/gmail.png" alt="Icono de gmail">
+            </a> </h3><br>
+            <h3>Mandame un WhatsApp: <a href="tel:890664579">
+                <img src="./images/whatsapp1.png" alt="Icono de whastapp">
+            </a>
+            </h3> 
+            
+        </footer>
+    </div>
+
 </body>
 </html>

@@ -1,0 +1,11 @@
+table,tr,th,td{
+
+    margin: .75em;
+    padding: .75em;
+    border: 1px solid black;
+}
+.tabla{
+    border-radius: .5em;
+    margin-top: 2em;
+    background-color: aliceblue;
+}

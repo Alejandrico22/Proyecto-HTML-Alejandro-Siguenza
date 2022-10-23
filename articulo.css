@@ -1,0 +1,38 @@
+body{
+    background-image: linear-gradient(to bottom, white, rgb(251, 169, 160) );
+    
+}
+.footer {
+    position: static;
+}
+del{
+    color: red;
+}
+em{
+    background-color: black;
+    color: white;
+}
+ins{
+    text-decoration: none;
+    color: green;
+}
+.flex-container{
+    display: flex;
+}
+.flex-container__main{
+    flex: 2 1 80%;
+    flex-flow: column wrap;
+    background-color: aliceblue;
+    border-radius: .5em;
+    padding: 1em;
+    margin: 1em;
+}
+
+.flex-container__aside{
+    flex: 2 1 20%;
+    flex-flow: column wrap;
+    margin: 1em;
+    padding: 1em;
+    border-radius: .5em;
+    background-color: aliceblue;
+}

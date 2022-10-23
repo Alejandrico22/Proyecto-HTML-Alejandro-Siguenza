@@ -1,0 +1,68 @@
+:root{
+    font-size: 1em;
+    box-sizing: border-box;
+    height: 100vh;
+    line-height: 1.2;
+}
+body{ 
+    overflow: hidden;                   /* No sé el motivo, pero si no le doy overflow: hidden al body no puedo quitar el margin-top que tiene respecto al :root */
+    height: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: inherit;
+    background-image: linear-gradient(to bottom,whitesmoke,grey);
+}
+body * + *{
+    margin-top: 1.5em;
+}
+.contenedor{
+    height: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+h1{
+    font-size: 3em;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+}
+h3{
+    margin-top: 1.5rem;
+    font-size: 2em;
+    font-family: 'Oswald',sans-serif;
+    font-weight: 500;
+}
+
+#nav-list{
+    display: flex;
+    background-color: #444;
+    padding: 1em 0;
+}
+#nav-list li{
+    list-style-type: none;
+    margin: 0;
+
+}
+#nav-list li a{
+    text-decoration: none;
+    padding: 1em .75em;
+    color: #999;
+}
+#nav-list li a:hover{
+    background-color: #2a6bdc;
+    color: white;
+}
+#nav-list .nav-right{
+    margin-left: auto;
+}
+
+.footer{
+    position: absolute;
+    bottom: 3em;
+}
+.footer h3{
+    margin-top: .25em;
+    font-size: 1.15em;
+}
+.footer a{
+    text-decoration: none;
+}

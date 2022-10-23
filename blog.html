@@ -4,76 +4,101 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./nav.css">
+    <link rel="stylesheet" href="./blog.css">
+    
     <title>Blog de Viajes</title>
 </head>
 <body>
     
-    <header>
+    <div class="contenedor">
+        <header>
         
-        <h1>Mi blog de viajes</h1>
-        <p>En esta página os hablaré sobre mis experiencias viajando alrededor del globo. Espero que lo disfrutéis</p>
-
-    </header>
-    <br>
-    <nav>
-        <ul type="square">
-            <li><a href="./index.html">Índice</a></li>
-            <li><a href="./form.html">Formulario</a></li>
-            <li><a href="./table.html">Tabla</a></li>
-            <li><a href="./articulo.html">Artículo de prensa</a></li>
+            <h1>Mi blog de viajes</h1>
+            <p>En esta página os hablaré sobre mis experiencias viajando alrededor del globo. Espero que lo disfrutéis</p>
     
-        </ul>
-    </nav>
-    <br>
-    <main>
-        <article>
-            <h3>MI VIAJE A JAPON</h3>
-            <img src="./images/japon.jfif" alt="famoso templo japonés rodeado de cerezos en flor">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste repellat enim nam provident iure, deleniti, itaque ipsam cupiditate architecto dignissimos voluptate. Dolorum sint nisi nostrum facilis esse adipisci commodi debitis accusantium provident. Laboriosam vel sapiente odio. Laborum nam hic, quisquam cum expedita non dicta consectetur, velit quasi amet ad perferendis.</p>
-            <p>A id minima neque? Esse, eveniet. Deleniti quibusdam consectetur quod tenetur vero quo velit placeat sint ad, nemo esse fugiat accusantium in quis similique, libero sapiente dolorem eius necessitatibus laborum est odio possimus sed totam. Soluta inventore reprehenderit repellendus aliquid voluptatem repellat harum ducimus minima odit quidem blanditiis, deleniti amet.</p>
-            <p>Porro provident cumque magnam. Officia nobis numquam dolorum aperiam quam ratione obcaecati velit cum, iusto ab provident dolore accusantium eum eius magni facilis ducimus. Quos ea tempore magnam eligendi architecto hic aliquid adipisci quis assumenda. Est fugiat excepturi, adipisci error accusantium accusamus vero praesentium provident quo, incidunt quaerat possimus temporibus.</p><br>
-        
-        </article>
+        </header>
         <br>
-        <article>
-            <h3>MI VIAJE A ISLANDIA</h3>
-            <img src="./images/islandia.jfif" alt="Hermosas vistas de Reykjavik, capital de Islandia">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste repellat enim nam provident iure, deleniti, itaque ipsam cupiditate architecto dignissimos voluptate. Dolorum sint nisi nostrum facilis esse adipisci commodi debitis accusantium provident. Laboriosam vel sapiente odio. Laborum nam hic, quisquam cum expedita non dicta consectetur, velit quasi amet ad perferendis.</p>
-            <p>A id minima neque? Esse, eveniet. Deleniti quibusdam consectetur quod tenetur vero quo velit placeat sint ad, nemo esse fugiat accusantium in quis similique, libero sapiente dolorem eius necessitatibus laborum est odio possimus sed totam. Soluta inventore reprehenderit repellendus aliquid voluptatem repellat harum ducimus minima odit quidem blanditiis, deleniti amet.</p>
-            <p>Porro provident cumque magnam. Officia nobis numquam dolorum aperiam quam ratione obcaecati velit cum, iusto ab provident dolore accusantium eum eius magni facilis ducimus. Quos ea tempore magnam eligendi architecto hic aliquid adipisci quis assumenda. Est fugiat excepturi, adipisci error accusantium accusamus vero praesentium provident quo, incidunt quaerat possimus temporibus.</p><br>
-        
-        </article>
+        <nav>
+            <ul type="square" id="nav-list">
+                <li><a href="./index.html">Índice</a></li>
+                <li><a href="./form.html">Formulario</a></li>
+                <li><a href="./table.html">Tabla</a></li>
+                <li><a href="./articulo.html">Artículo de prensa</a></li>
+                <li class="nav-right"><a href="">About Us</a></li>
+            </ul>
+        </nav>
         <br>
-        <article>
-            <h3>MI VIAJE A MEXICO</h3>
-            <img src="./images/mexico.jfif" alt="Famoso templo maya en México">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste repellat enim nam provident iure, deleniti, itaque ipsam cupiditate architecto dignissimos voluptate. Dolorum sint nisi nostrum facilis esse adipisci commodi debitis accusantium provident. Laboriosam vel sapiente odio. Laborum nam hic, quisquam cum expedita non dicta consectetur, velit quasi amet ad perferendis.</p>
-            <p>A id minima neque? Esse, eveniet. Deleniti quibusdam consectetur quod tenetur vero quo velit placeat sint ad, nemo esse fugiat accusantium in quis similique, libero sapiente dolorem eius necessitatibus laborum est odio possimus sed totam. Soluta inventore reprehenderit repellendus aliquid voluptatem repellat harum ducimus minima odit quidem blanditiis, deleniti amet.</p>
-            <p>Porro provident cumque magnam. Officia nobis numquam dolorum aperiam quam ratione obcaecati velit cum, iusto ab provident dolore accusantium eum eius magni facilis ducimus. Quos ea tempore magnam eligendi architecto hic aliquid adipisci quis assumenda. Est fugiat excepturi, adipisci error accusantium accusamus vero praesentium provident quo, incidunt quaerat possimus temporibus.</p><br>
+        <main class="grid-container">
+            <article class="article">
+                <section class="section--japon">
+                    <h3>MI VIAJE A JAPON</h3>
+                    <img src="./images/japon.jfif" alt="famoso templo japonés rodeado de cerezos en flor">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste repellat enim nam provident iure, deleniti, itaque ipsam cupiditate architecto dignissimos voluptate. Dolorum sint nisi nostrum facilis esse adipisci commodi debitis accusantium provident. Laboriosam vel sapiente odio. Laborum nam hic, quisquam cum expedita non dicta consectetur, velit quasi amet ad perferendis.</p>
+                    <p>A id minima neque? Esse, eveniet. Deleniti quibusdam consectetur quod tenetur vero quo velit placeat sint ad, nemo esse fugiat accusantium in quis similique, libero sapiente dolorem eius necessitatibus laborum est odio possimus sed totam. Soluta inventore reprehenderit repellendus aliquid voluptatem repellat harum ducimus minima odit quidem blanditiis, deleniti amet.</p>
+                    <p>Porro provident cumque magnam. Officia nobis numquam dolorum aperiam quam ratione obcaecati velit cum, iusto ab provident dolore accusantium eum eius magni facilis ducimus. Quos ea tempore magnam eligendi architecto hic aliquid adipisci quis assumenda. Est fugiat excepturi, adipisci error accusantium accusamus vero praesentium provident quo, incidunt quaerat possimus temporibus.</p><br>
+                
+                </section>
+                <br>
+                <section class="section--islandia">
+                    <h3>MI VIAJE A ISLANDIA</h3>
+                    <img src="./images/islandia.jfif" alt="Hermosas vistas de Reykjavik, capital de Islandia">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste repellat enim nam provident iure, deleniti, itaque ipsam cupiditate architecto dignissimos voluptate. Dolorum sint nisi nostrum facilis esse adipisci commodi debitis accusantium provident. Laboriosam vel sapiente odio. Laborum nam hic, quisquam cum expedita non dicta consectetur, velit quasi amet ad perferendis.</p>
+                    <p>A id minima neque? Esse, eveniet. Deleniti quibusdam consectetur quod tenetur vero quo velit placeat sint ad, nemo esse fugiat accusantium in quis similique, libero sapiente dolorem eius necessitatibus laborum est odio possimus sed totam. Soluta inventore reprehenderit repellendus aliquid voluptatem repellat harum ducimus minima odit quidem blanditiis, deleniti amet.</p>
+                    <p>Porro provident cumque magnam. Officia nobis numquam dolorum aperiam quam ratione obcaecati velit cum, iusto ab provident dolore accusantium eum eius magni facilis ducimus. Quos ea tempore magnam eligendi architecto hic aliquid adipisci quis assumenda. Est fugiat excepturi, adipisci error accusantium accusamus vero praesentium provident quo, incidunt quaerat possimus temporibus.</p><br>
+                
+                </section>
+                <br>
+                <section class="section--mexico">
+                    <h3>MI VIAJE A MEXICO</h3>
+                    <img src="./images/mexico.jfif" alt="Famoso templo maya en México">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste repellat enim nam provident iure, deleniti, itaque ipsam cupiditate architecto dignissimos voluptate. Dolorum sint nisi nostrum facilis esse adipisci commodi debitis accusantium provident. Laboriosam vel sapiente odio. Laborum nam hic, quisquam cum expedita non dicta consectetur, velit quasi amet ad perferendis.</p>
+                    <p>A id minima neque? Esse, eveniet. Deleniti quibusdam consectetur quod tenetur vero quo velit placeat sint ad, nemo esse fugiat accusantium in quis similique, libero sapiente dolorem eius necessitatibus laborum est odio possimus sed totam. Soluta inventore reprehenderit repellendus aliquid voluptatem repellat harum ducimus minima odit quidem blanditiis, deleniti amet.</p>
+                    <p>Porro provident cumque magnam. Officia nobis numquam dolorum aperiam quam ratione obcaecati velit cum, iusto ab provident dolore accusantium eum eius magni facilis ducimus. Quos ea tempore magnam eligendi architecto hic aliquid adipisci quis assumenda. Est fugiat excepturi, adipisci error accusantium accusamus vero praesentium provident quo, incidunt quaerat possimus temporibus.</p><br>
+                    
+                </section>
+                <br>
+                <section class="section--brasil">
+                    <h3>MI VIAJE A BRASIL</h3>
+                    <img src="./images/brasil.jfif" alt="Vistas de Brasil desde el Cristo Redentor, famoso monumento brasileño">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste repellat enim nam provident iure, deleniti, itaque ipsam cupiditate architecto dignissimos voluptate. Dolorum sint nisi nostrum facilis esse adipisci commodi debitis accusantium provident. Laboriosam vel sapiente odio. Laborum nam hic, quisquam cum expedita non dicta consectetur, velit quasi amet ad perferendis.</p>
+                    <p>A id minima neque? Esse, eveniet. Deleniti quibusdam consectetur quod tenetur vero quo velit placeat sint ad, nemo esse fugiat accusantium in quis similique, libero sapiente dolorem eius necessitatibus laborum est odio possimus sed totam. Soluta inventore reprehenderit repellendus aliquid voluptatem repellat harum ducimus minima odit quidem blanditiis, deleniti amet.</p>
+                    <p>Porro provident cumque magnam. Officia nobis numquam dolorum aperiam quam ratione obcaecati velit cum, iusto ab provident dolore accusantium eum eius magni facilis ducimus. Quos ea tempore magnam eligendi architecto hic aliquid adipisci quis assumenda. Est fugiat excepturi, adipisci error accusantium accusamus vero praesentium provident quo, incidunt quaerat possimus temporibus.</p><br>
+                </section>
+            </article>
             
-        </article>
-        <br>
-        <article>
-            <h3>MI VIAJE A BRASIL</h3>
-            <img src="./images/brasil.jfif" alt="Vistas de Brasil desde el Cristo Redentor, famoso monumento brasileño">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste repellat enim nam provident iure, deleniti, itaque ipsam cupiditate architecto dignissimos voluptate. Dolorum sint nisi nostrum facilis esse adipisci commodi debitis accusantium provident. Laboriosam vel sapiente odio. Laborum nam hic, quisquam cum expedita non dicta consectetur, velit quasi amet ad perferendis.</p>
-            <p>A id minima neque? Esse, eveniet. Deleniti quibusdam consectetur quod tenetur vero quo velit placeat sint ad, nemo esse fugiat accusantium in quis similique, libero sapiente dolorem eius necessitatibus laborum est odio possimus sed totam. Soluta inventore reprehenderit repellendus aliquid voluptatem repellat harum ducimus minima odit quidem blanditiis, deleniti amet.</p>
-            <p>Porro provident cumque magnam. Officia nobis numquam dolorum aperiam quam ratione obcaecati velit cum, iusto ab provident dolore accusantium eum eius magni facilis ducimus. Quos ea tempore magnam eligendi architecto hic aliquid adipisci quis assumenda. Est fugiat excepturi, adipisci error accusantium accusamus vero praesentium provident quo, incidunt quaerat possimus temporibus.</p><br>
-        </article>
-    </main>
-    <br>
-
-    <aside>
-        <h4><a href="./articulo.html">Cómo viajar sin a penas dinero por todo el mundo</a></h4>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique, unde earum perspiciatis minus, consequatur ipsam corrupti fuga asperiores expedita exercitationem possimus ducimus voluptatibus enim aut.</p>
-
-    </aside>
-    <br>
-    
-    <footer>
-        Envíame un correo pulsando<a href="mailto:alejandrokukinico@gmail.com">aquí</a> <br>
-        Mandame un WhatsApp desde <a href="tel:890664579">aquí</a>
+            <aside class="aside--articulo1">
+                <h4><a href="./articulo.html">Cómo viajar sin a penas dinero por todo el mundo</a></h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique, unde earum perspiciatis minus, consequatur ipsam corrupti fuga asperiores expedita exercitationem possimus ducimus voluptatibus enim aut.</p>
         
-    </footer>
+            </aside>
+            <aside class="aside--articulo2">
+                <h4><a href="#">Enlace a mi próximo artículo</a></h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quos natus reiciendis blanditiis soluta eligendi tempore inventore, ducimus ad quae ratione molestiae aut aliquam quas consequatur odit. Deserunt, aliquam voluptatibus.</p>
+            </aside>
+            <br>
+
+        </main>
+        <br>
+
+        
+        <footer class="footer">
+
+            <h3>Envíame un correo <a href="mailto:alejandrokukinico@gmail.com">
+                <img src="./images/gmail.png" alt="Icono de gmail">
+            </a> </h3><br>
+            <h3>Mandame un WhatsApp: <a href="tel:890664579">
+                <img src="./images/whatsapp1.png" alt="Icono de whastapp">
+            </a>
+            </h3> 
+            
+        </footer>
+    </div>
 </body>
 </html>

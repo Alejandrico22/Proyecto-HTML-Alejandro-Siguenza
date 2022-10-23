@@ -1,0 +1,77 @@
+body{
+    background-image: linear-gradient(to bottom, rgb(235, 245, 248), rgb(234, 239, 241));
+    overflow: initial;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 1.15em;
+}
+.footer{
+    position: static;
+}
+.grid-container{
+    display: grid;
+    grid-template-areas:"article aside1"
+                        "article aside1"
+                        "article aside2"
+                        "article aside2";
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+
+}
+.grid-container > * + *{
+    margin-left: auto;
+    padding: 1.5em;
+    background-color: rgb(136, 125, 125);
+    box-shadow: 0 .5em rgb(166, 135, 145);
+    border-radius: .5em;
+}
+
+
+.grid-container .aside--articulo1{
+    grid-area: aside1;
+    max-height: 25%;
+    margin-top: .5em;
+}
+.grid-container .aside--articulo2{
+    grid-area: aside2;
+    max-height: 25% ;
+}
+
+
+.grid-container .article{
+    grid-area: article;
+
+
+    grid-template-areas:"section1"
+                        "section2"
+                        "section3"
+                        "section4";
+    grid-template-columns: 2.5fr;
+    grid-template-rows: repeat(4, 1fr);
+    
+}
+.grid-container .article > *{
+    margin: .5em 1.5em 1em 0;
+    padding: 1.5em;
+    background-color: rgb(136, 125, 125);
+    box-shadow: 0 .5em rgb(166, 135, 145);
+    border-radius: .5em;
+}
+.article .section--japon{
+    grid-area: section1;
+    
+}
+.article .section--islandia{
+    grid-area: section2;
+    
+}
+.article .section--mexico{
+    grid-area: section3;
+    /* margin-top: -1em; */
+
+    
+}
+.article .section--brasil{
+    grid-area: section4;
+    
+}
